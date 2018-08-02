@@ -345,29 +345,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 0.5
   attackDamage: 10
---- !u!1 &240802323 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1563324571835310, guid: b695b895cee8e814397830b41818b3bf,
-    type: 2}
-  m_PrefabInternal: {fileID: 1611719985}
---- !u!114 &240802324
+--- !u!114 &187985871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 240802323}
+  m_GameObject: {fileID: 187985861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
+  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
   currentHealth: 0
-  healthSlider: {fileID: 1144710217}
-  damageImage: {fileID: 1375465556}
-  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
 --- !u!1 &360913700
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +410,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
@@ -1104,7 +1097,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1373586361
 GameObject:
@@ -1281,8 +1274,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4583907344197884, guid: b695b895cee8e814397830b41818b3bf, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114208094685839924, guid: b695b895cee8e814397830b41818b3bf,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1144710217}
+    - target: {fileID: 114208094685839924, guid: b695b895cee8e814397830b41818b3bf,
+        type: 2}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 1375465556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b695b895cee8e814397830b41818b3bf, type: 2}
   m_IsPrefabAsset: 0
@@ -1357,7 +1360,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400074, guid: be66986effd141b4992d2d78be127139, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 100074, guid: be66986effd141b4992d2d78be127139, type: 3}
       propertyPath: m_Layer
@@ -1415,7 +1418,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 409160, guid: ad67cddd729fb4342be2063a3f5ad7cc, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad67cddd729fb4342be2063a3f5ad7cc, type: 2}
